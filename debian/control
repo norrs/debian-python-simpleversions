@@ -1,0 +1,26 @@
+Source: simpleversions
+Section: python
+Priority: optional
+Maintainer: Roy Sindre Norangshol <roy.sindre@norangshol.no>
+Build-Depends: debhelper (>= 8.0.0), python-all (>= 2.6.5-2~), python3-all
+Build-Depends-Indep: python-docutils, python-nose
+Standards-Version: 3.9.3
+X-Python-Version: >= 2.6
+X-Python3-Version: >= 3.2
+#Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://git.debian.org/collab-maint/simpleversions.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/simpleversions.git;a=summary
+
+Package: python-simpleversions
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}
+Description: Python module for handling version comparison.
+ It makes it easy for python programmers to compare dotted
+ version numbers, which is newest etc.
+
+Package: python3-simpleversions
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Description: Python module for handling version comparison.
+ It makes it easy for python programmers to compare dotted
+ version numbers, which is newest etc.
